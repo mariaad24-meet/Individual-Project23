@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #d790ca; /* Purple background color */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 60px; /* Adjust the height of the logo as needed */
+  margin-right: 10px; /* Add margin to separate the logo from the site title */
+}
+
+.site-title {
+  font-size: 24px;
+  color: #fff; /* White site title text color */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff; /* White navigation link text color */
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(135deg, #55c2f3, #ff6b6b); /* Blue to pink gradient */
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* White text color for hero section */
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #7453c1; /* Purple button background color */
+  color: #fff; /* White button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #5e3aa4; /* Darker purple on button hover */
+}
+
+.products {
+  padding: 40px 0;
+  background-color: #f9c2ff; /* Light pink background color for products section */
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about {
+  padding: 40px 0;
+  background-color: #ffaccc; /* Light pink background color for about section */
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact {
+  background-color: #b0e0e6; /* Light blue background color for contact section */
+  padding: 40px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #222; /* Dark purple background color for footer */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+.products {
+  padding: 40px 0;
+  background-color: #f9c2ff; /* Light pink background color for products section */
+  text-align: center; /* Center the buttons */
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products button {
+  background-color: #7453c1; /* Purple button background color */
+  color: #fff; /* White button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px; /* Add some space between the buttons */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.products button:hover {
+  background-color: #5e3aa4; /* Darker purple on button hover */
+}
+
+.products img {
+  width: 210px;
+}
+</style>
+<body>
+<header>
+  <!-- ... existing code ... -->
+  <a href="cart" class="btn">Cart</a>
+</header>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Jewelry Store</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="signin" class="btn">Sign In</a></li>
+                    <li><a href="signup" class="btn">Sign Up</a></li>
+                    <li><a href="signout" class="btn">Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Our Jewelry Store</h2>
+            <p>Discover the perfect piece to accentuate your beauty and style.</p>
+            <a href="#products" class="btn">View Products</a>
+        </div>
+    </section>
+
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>About Our Products <3 </h2>
+            <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5920-16_900x.jpg?v=1688745938" width="210" >
+            <a href="/rings"><button>RINGS💍</button></a>
+            <img src="https://cdn.shopify.com/s/files/1/1401/8791/files/5977-78_1024x1024.jpg?v=1689250390" width="210" >
+            <a href="/necklaces"><button>NECKLACES📿</button></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p> Welcome to MJ online store!! , where elegance and craftsmanship unite to bring your dreams to life. Explore our curated collection of timeless pieces, each meticulously crafted to capture the essence of beauty and sophistication. Let us adorn your moments with a touch of brilliance and create cherished memories together.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries and orders, please reach out to us:</p>
+            <p>Email: mj@jewelrystore.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Jewelry Store. All rights reserved.</p>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Product Listing</title>
+<style>
+    body {
+      background-color: #f8f8f8; ;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      background-color: #f2f2f2;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      margin: 0;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    .product p:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #aa00aa; /* Purple color */
+    }
+
+    .addToCartBtn {
+      background-color: #ff1493; /* Pink color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .addToCartBtn:hover {
+      background-color: #00bfff; /* Blue color */
+    }
+            .footer a {
+            text-decoration: none;
+            color: #8338ec; /* Purple link text color */
+            margin: 0 10px;
+        }
+
+        .footer button {
+            background-color: #fff;
+            border: 1px solid #8338ec; /* Purple button border color */
+            color: #8338ec; /* Purple button text color */
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer button:hover {
+            background-color: #8338ec; /* Darker purple on button hover */
+            color: #fff;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="footer">
+      <a href="/"><button>Go back to the homepage</button></a>
+  <div class="products">
+
+    <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5935-67_900x.jpg?v=1689106370" width="200">
+    <p>Price: 25$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5935-67_900x.jpg?v=1689106370">
+      <input type="hidden" name="price" value="25">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+    <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5920-14_2000x.jpg?v=1688745938" width="200">
+    <p>Price:45$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5920-14_2000x.jpg?v=1688745938">
+      <input type="hidden" name="price" value="45">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+    <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5725-009_2000x.jpg?v=1682606357" width="200">
+    <p>Price: $<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5725-009_2000x.jpg?v=1682606357">
+      <input type="hidden" name="price" value=""65>
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+  <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5790-32_2000x.jpg?v=1686689017" width="200">
+    <p>Price: 150$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5790-32_2000x.jpg?v=1686689017">
+      <input type="hidden" name="price" value="150">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+      <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5897-58_2000x.jpg?v=1689870351" width="200">
+    <p>Price: 55$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5897-58_2000x.jpg?v=1689870351">
+      <input type="hidden" name="price" value="55">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+      <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5893-90_2000x.jpg?v=1687788824" width="200">
+    <p>Price: 40$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5893-90_2000x.jpg?v=1687788824">
+      <input type="hidden" name="price" value="40">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+          <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5861-35_2000x.jpg?v=1687189522" width="200">
+    <p>Price: 70$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5861-35_2000x.jpg?v=1687189522">
+      <input type="hidden" name="price" value="70">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+  
+
+              <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/products/5658-57_2000x.jpg?v=1682028899" width="200">
+    <p>Price: 78$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/products/5658-57_2000x.jpg?v=1682028899">
+      <input type="hidden" name="price" value="78">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+    <div class="product">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/files/5802-17_1024x1024.jpg?v=1686672059" width="200">
+    <p>Price: 90$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/files/5802-17_1024x1024.jpg?v=1686672059">
+      <input type="hidden" name="price" value="90">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+        <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5755-44_2000x.jpg?v=1686351790" width="200">
+    <p>Price: 180$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5755-44_2000x.jpg?v=1686351790">
+      <input type="hidden" name="price" value="180">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+            <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5742-54_2000x.jpg?v=1685451146" width="200">
+    <p>Price: 80$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5742-54_2000x.jpg?v=1685451146">
+      <input type="hidden" name="price" value="80">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+                <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5674-072_2000x.jpg?v=1688407332" width="200">
+    <p>Price: 75$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5674-072_2000x.jpg?v=1688407332">
+      <input type="hidden" name="price" value="75">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+                <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5463-068_2000x.jpg?v=1683162868" width="200">
+    <p>Price: 200$<span class="productPrice"></span></p>
+    <form action="/rings" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5463-068_2000x.jpg?v=1683162868">
+      <input type="hidden" name="price" value="200">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+                  <div class="product">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5725-016_2000x.jpg?v=1682607401" width="200">
+    <p>Price: 98$<span class="productPrice"></span></p>
+    <form action="/" method="POST">
+      <input type="hidden" name="image" value="">
+      <input type="hidden" name="price" value="98">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+<script>
+  // Function to handle "Add to Cart" button click
+  function addToCart() {
+    const productName = this.parentElement.querySelector("p:first-child").innerText;
+    const productPrice = parseFloat(this.parentElement.querySelector(".productPrice").innerText);
+    const productImage = this.parentElement.querySelector("img").src;
+
+    const cartItems = getCartItems();
+    cartItems.push({ name: productName, price: productPrice, image: productImage });
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+    alert("Item added to cart!");
+
+
+  }
+
+  const addToCartButtons = document.querySelectorAll(".addToCartBtn");
+  addToCartButtons.forEach(button => button.addEventListener("click", addToCart));
+</script>
+
+
+</body>
+</html>
+
+
+

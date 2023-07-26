@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #d9eaff; /* Baby blue background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #f9eaf7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 24px;
+            color: #8338ec; /* Purple heading text color */
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #8338ec; /* Purple label text color */
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #f72585; /* Pink button background color */
+            color: #fff; /* White button text color */
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b5179e; /* Darker pink on button hover */
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #8338ec; /* Purple link text color */
+            margin: 0 10px;
+        }
+
+        .footer button {
+            background-color: #fff;
+            border: 1px solid #8338ec; /* Purple button border color */
+            color: #8338ec; /* Purple button text color */
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer button:hover {
+            background-color: #8338ec; /* Darker purple on button hover */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="/signin">
+        <!-- Heading -->
+        <h4>Log into your account</h4>
+        <p>Please fill up your information below to sign in.</p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email" name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password" name="password" minlength="6">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <input type="submit" value="Sign In" />
+        </div>
+    </form>
+
+    <div class="footer">
+        <a href="/signup"><button>SIGNUP</button></a>
+        <a href="/"><button>Go back to the homepage</button></a>
+    </div>
+</body>
+
+</html>

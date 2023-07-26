@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<title>Product Listing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      background-color: #f2f2f2;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .item p {
+      margin: 0;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    .item p:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #aa00aa; /* Purple color */
+    }
+
+    .addToCartBtn {
+      background-color: #ff1493; /* Pink color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .addToCartBtn:hover {
+      background-color: #00bfff; /* Blue color */
+    }
+            .footer a {
+            text-decoration: none;
+            color: #8338ec; /* Purple link text color */
+            margin: 0 10px;
+        }
+
+        .footer button {
+            background-color: #fff;
+            border: 1px solid #8338ec; /* Purple button border color */
+            color: #8338ec; /* Purple button text color */
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer button:hover {
+            background-color: #8338ec; /* Darker purple on button hover */
+            color: #fff;
+        }
+  </style>
+</head>
+<body>
+    <div class="footer">
+      <a href="/"><button>Go back to the homepage</button></a>
+
+<div class="items">
+      <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/IMG_7627_1024x1024.jpg?v=1571609849" width="200">
+    <p>Price: 55$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/IMG_7627_1024x1024.jpg?v=1571609849">
+      <input type="hidden" name="price" value="55">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+  
+
+      <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/DSC01010929071_1024x1024.jpg?v=1571610095" width="200">
+    <p>Price: 145$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/DSC01010929071_1024x1024.jpg?v=1571610095">
+      <input type="hidden" name="price" value="145">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+          <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/files/5977-78_1024x1024.jpg?v=1689250390" width="200">
+    <p>Price: 75$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/files/5977-78_1024x1024.jpg?v=1689250390">
+      <input type="hidden" name="price" value="75">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+  
+
+    <div class="item">
+    <img src="https://www.marketsquarejewelers.com/cdn/shop/files/5644-05_2000x.jpg?v=1682700059" width="200">
+    <p>Price: 75$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://www.marketsquarejewelers.com/cdn/shop/files/5644-05_2000x.jpg?v=1682700059">
+      <input type="hidden" name="price" value="75">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+  
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/5472-69_1024x1024.jpg?v=1681768373" width="200">
+    <p>Price: 55$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/5472-69_1024x1024.jpg?v=1681768373">
+      <input type="hidden" name="price" value="55">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/5266-54_1024x1024.jpg?v=1670355475" width="200">
+    <p>Price: 40$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/5266-54_1024x1024.jpg?v=1670355475">
+      <input type="hidden" name="price" value="40">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/3605-104_1024x1024.jpg?v=1638543604" width="200">
+    <p>Price: 70$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/3605-104_1024x1024.jpg?v=1638543604">
+      <input type="hidden" name="price" value="70">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/3416-117_a22d294b-f465-470e-9c1a-bb499d74b93a_1024x1024.jpg?v=1638460009" width="200">
+    <p>Price: 78$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/3416-117_a22d294b-f465-470e-9c1a-bb499d74b93a_1024x1024.jpg?v=1638460009">
+      <input type="hidden" name="price" value="78">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/3306-188_480a0727-ebf9-4cd4-b8cf-4f977c0aec47_1024x1024.jpg?v=1623187237" width="200">
+    <p>Price: 90$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/3306-188_480a0727-ebf9-4cd4-b8cf-4f977c0aec47_1024x1024.jpg?v=1623187237">
+      <input type="hidden" name="price" value="90">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+    <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/3307-45_8ba6f762-3c22-486f-9d5a-0acfb707770b_1024x1024.jpg?v=1618679360" width="200">
+    <p>Price: 180$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/3307-45_8ba6f762-3c22-486f-9d5a-0acfb707770b_1024x1024.jpg?v=1618679360">
+      <input type="hidden" name="price" value="180">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/3108-59_1024x1024.jpg?v=1607455394" width="200">
+    <p>Price: 80$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/3108-59_1024x1024.jpg?v=1607455394">
+      <input type="hidden" name="price" value="80">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+    <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/2137-74_085aa0a6-93bd-4c16-b1ff-d97ca68a2bfd_1024x1024.jpg?v=1599057595" width="200">
+    <p>Price: 75$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/2137-74_085aa0a6-93bd-4c16-b1ff-d97ca68a2bfd_1024x1024.jpg?v=1599057595">
+      <input type="hidden" name="price" value="75">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+    <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/2038-119_849f1649-fdc1-40a9-b9c9-cf0a67ead883_1024x1024.jpg?v=1572019414" width="200">
+    <p>Price: 200$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/2038-119_849f1649-fdc1-40a9-b9c9-cf0a67ead883_1024x1024.jpg?v=1572019414">
+      <input type="hidden" name="price" value="200">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+
+
+        <div class="item">
+    <img src="https://cdn.shopify.com/s/files/1/1401/8791/products/1733-110_1024x1024.jpg?v=1571612184" width="200">
+    <p>Price: 98$<span class="productPrice"></span></p>
+    <form action="/necklaces" method="POST">
+      <input type="hidden" name="image" value="https://cdn.shopify.com/s/files/1/1401/8791/products/1733-110_1024x1024.jpg?v=1571612184">
+      <input type="hidden" name="price" value="98">
+      <button type="submit" class="addToCartBtn">Add to Cart</button>
+    </form>
+  </div>
+  </div>
+<script>
+  // Function to handle "Add to Cart" button click
+  function addToCart() {
+    const productName = this.parentElement.querySelector("p:first-child").innerText;
+    const productPrice = parseFloat(this.parentElement.querySelector(".productPrice").innerText);
+    const productImage = this.parentElement.querySelector("img").src;
+
+    const cartItems = getCartItems();
+    cartItems.push({ name: productName, price: productPrice, image: productImage });
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+    alert("Item added to cart!");
+
+
+  }
+
+  const addToCartButtons = document.querySelectorAll(".addToCartBtn");
+  addToCartButtons.forEach(button => button.addEventListener("click", addToCart));
+</script>
+
+</body>
+</html>
+
+
